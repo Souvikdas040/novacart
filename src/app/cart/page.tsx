@@ -12,6 +12,7 @@ import EmptyCart from "@/components/EmptyCart/EmptyCart";
 import RelatedProducts from "@/components/RelatedProducts/RelatedProducts";
 
 import "./cart.css";
+import { products } from "@/data/products";
 
 export default function CartPage() {
   const { cart } = useCart();
@@ -46,7 +47,7 @@ export default function CartPage() {
         </div>
       </section>
 
-      <RelatedProducts />
+      <RelatedProducts currentId={products.id} />
 
       <Footer />
     </>

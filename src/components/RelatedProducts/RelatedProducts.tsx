@@ -15,15 +15,13 @@ interface RelatedProductsProps {
   currentId: number;
 }
 
-export default function RelatedProducts({
-  currentId,
-}: RelatedProductsProps) {
+export default function RelatedProducts({ currentId }: RelatedProductsProps) {
   const { addToCart } = useCart();
 
   const { toggleWishlist, isWishlisted } = useWishlist();
 
   const relatedProducts = products
-    .filter((product) => product.id !== currentId)
+    .filter((product) => (currentId ? product.id !== currentId : true))
     .slice(0, 4);
 
   return (
@@ -37,9 +35,7 @@ export default function RelatedProducts({
       <div className="related-grid">
         {relatedProducts.map((product: Product) => (
           <div className="related-card" key={product.id}>
-            <span className="badge">
-              {product.discount || "New"}
-            </span>
+            <span className="badge">{product.discount || "New"}</span>
 
             <button
               className={`wishlist-btn ${
@@ -64,9 +60,7 @@ export default function RelatedProducts({
             </Link>
 
             <div className="card-content">
-              <span className="category">
-                {product.category}
-              </span>
+              <span className="category">{product.category}</span>
               <h3>{product.name}</h3>
               <div className="rating">
                 <FaStar />
@@ -75,22 +69,15 @@ export default function RelatedProducts({
               </div>
 
               <div className="price-row">
-                <span className="price">
-                  ${product.price}
-                </span>
+                <span className="price">${product.price}</span>
 
                 {product.oldPrice && (
-                  <span className="old-price">
-                    ${product.oldPrice}
-                  </span>
+                  <span className="old-price">${product.oldPrice}</span>
                 )}
               </div>
 
               <div className="buttons">
-                <Link
-                  href={`/product/${product.id}`}
-                  className="view-btn"
-                >
+                <Link href={`/product/${product.id}`} className="view-btn">
                   Details
                 </Link>
 
