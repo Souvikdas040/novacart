@@ -13,6 +13,12 @@ import {
 } from "react-icons/fa";
 
 import "./about.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "NovaCart - About Page",
+  description: "Modern E-Commerce UI",
+};
 
 export default function AboutPage() {
   return (
