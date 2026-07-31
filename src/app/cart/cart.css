@@ -1,0 +1,38 @@
+.cart-page {
+  padding: 80px 0;
+  background: #f8fafc;
+  min-height: 70vh;
+}
+
+.cart-header {
+  margin-bottom: 40px;
+}
+
+.cart-header h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.cart-header p {
+  color: #64748b;
+}
+
+.cart-layout {
+  display: grid;
+  grid-template-columns: 2fr 380px;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 992px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+}

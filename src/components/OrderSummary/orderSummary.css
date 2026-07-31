@@ -1,0 +1,44 @@
+.order-summary {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  position: sticky;
+  top: 100px;
+}
+
+.order-summary h2 {
+  margin-bottom: 25px;
+}
+
+.summary-product {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.total {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.place-order-btn {
+  margin-top: 25px;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.place-order-btn:hover {
+  background: #1d4ed8;
+}

@@ -1,0 +1,33 @@
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: max-content;
+  padding: 8px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.quantity-selector button {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quantity-selector button:hover {
+  background: #1d4ed8;
+}
+
+.quantity-selector span {
+  min-width: 25px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}

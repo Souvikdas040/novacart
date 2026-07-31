@@ -1,0 +1,30 @@
+.empty-wishlist {
+  text-align: center;
+
+  padding: 100px 20px;
+}
+
+.empty-icon {
+  font-size: 80px;
+
+  color: #ef4444;
+}
+
+.empty-wishlist h2 {
+  margin: 25px 0 10px;
+}
+
+.empty-wishlist p {
+  color: #666;
+
+  margin-bottom: 30px;
+}
+
+.shop-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: #2563eb;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+}

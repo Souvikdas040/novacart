@@ -1,0 +1,662 @@
+/* hero */
+.about-hero {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Video */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(10, 18, 35, 0.82),
+    rgba(10, 18, 35, 0.55),
+    rgba(10, 18, 35, 0.35)
+  );
+  z-index: 1;
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  max-width: 700px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 28px;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+  line-height: 1.05;
+  margin-bottom: 28px;
+  font-weight: 800;
+}
+
+.hero-content h1 span {
+  color: #60a5fa;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 40px;
+  max-width: 620px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 55px;
+}
+
+.hero-mini-stats {
+  display: flex;
+  gap: 50px;
+}
+
+.hero-mini-stats h3 {
+  font-size: 34px;
+  color: #fff;
+}
+
+.hero-mini-stats span {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* buttons */
+
+.primary-btn,
+.secondary-btn,
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: 0.35s;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+  padding: 15px 34px;
+  border-radius: 12px;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  color: white;
+  padding: 15px 34px;
+  border-radius: 12px;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: #111827;
+}
+
+/* sections */
+.about-section,
+.mission,
+.why-section {
+  padding: 120px 0;
+}
+
+.about-grid,
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+}
+
+.reverse {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-tag {
+  display: inline-block;
+  padding: 8px 18px;
+  margin-bottom: 20px;
+  background: #dbeafe;
+  color: #2563eb;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.about-content h2,
+.mission-content h2,
+.section-heading h2 {
+  font-size: 46px;
+  margin-bottom: 22px;
+  color: #111827;
+}
+
+.about-content p,
+.mission-content p,
+.section-heading p {
+  color: #6b7280;
+  line-height: 1.9;
+  margin-bottom: 22px;
+  font-size: 17px;
+}
+
+/* images */
+.about-image {
+  position: relative;
+}
+
+.about-image img,
+.mission-image img {
+  width: 100%;
+  border-radius: 26px;
+  object-fit: cover;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+  transition: 0.4s;
+}
+
+.about-image:hover img,
+.mission-image:hover img {
+  transform: scale(1.03);
+}
+
+/* Floating Card */
+.experience-card {
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 26px;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.experience-card svg {
+  color: #2563eb;
+  font-size: 34px;
+}
+
+.experience-card h3 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.experience-card span {
+  color: #6b7280;
+}
+
+/* story list */
+.story-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 35px 0;
+}
+
+.story-list div {
+  background: #f8fafc;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.story-list div:hover {
+  background: #dbeafe;
+  transform: translateY(-4px);
+}
+
+/* mission */
+.mission {
+  background: #f8fafc;
+}
+
+.mission-list {
+  margin-top: 35px;
+  display: grid;
+  gap: 18px;
+}
+
+.mission-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  padding: 18px 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: 0.35s;
+}
+
+.mission-item:hover {
+  transform: translateX(8px);
+}
+
+.mission-item svg {
+  color: #2563eb;
+  font-size: 22px;
+}
+
+/* Why Choose Us */
+.why-section {
+  background: white;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: auto;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.why-card {
+  padding: 40px 28px;
+  background: white;
+  border-radius: 22px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  transition: 0.35s;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.why-icon {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto 22px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #60a5fa);
+  color: white;
+  font-size: 30px;
+}
+
+.why-card h3 {
+  margin-bottom: 14px;
+  color: #111827;
+}
+
+.why-card p {
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+/* Statistics */
+
+.stats {
+  padding: 110px 0;
+  background: linear-gradient(135deg, #0f172a, #111827);
+  color: white;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+.stat-card {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 40px 25px;
+  border-radius: 22px;
+  backdrop-filter: blur(12px);
+  transition: 0.35s;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.stat-card h2 {
+  font-size: 52px;
+  color: #60a5fa;
+}
+
+.stat-card p {
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Trusted Brands */
+
+.brands-section {
+  padding: 110px 0;
+  background: #ffffff;
+}
+
+.brands-grid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px;
+}
+
+.brand-card {
+  height: 120px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.35s;
+  cursor: pointer;
+}
+
+.brand-card img {
+  width: auto;
+  max-width: 110px;
+  height: auto;
+  opacity: 0.75;
+  filter: grayscale(100%);
+  transition: 0.35s;
+}
+
+.brand-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  border-color: #2563eb;
+}
+
+.brand-card:hover img {
+  filter: grayscale(0);
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .brands-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .brand-card {
+    height: 100px;
+  }
+
+  .brand-card img {
+    max-width: 90px;
+  }
+}
+
+/* team */
+.team-section {
+  padding: 120px 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  margin-top: 70px;
+}
+
+.team-card {
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  transition: 0.35s;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-card img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+
+.team-info {
+  padding: 28px;
+}
+
+.team-info h3 {
+  margin-bottom: 8px;
+}
+
+.team-info span {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.team-info p {
+  margin-top: 18px;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+/* CTA */
+.about-cta {
+  padding: 110px 0;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  text-align: center;
+}
+
+.about-cta h2 {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+.about-cta p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.9;
+  opacity: 0.9;
+}
+
+.cta-btn {
+  margin-top: 40px;
+  padding: 16px 40px;
+  background: white;
+  color: #2563eb;
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.cta-btn:hover {
+  transform: translateY(-4px);
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .about-grid,
+  .mission-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .story-list {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-mini-stats {
+    gap: 35px;
+  }
+
+  .experience-card {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .about-hero {
+    min-height: 650px;
+  }
+
+  .hero-content h1 {
+    font-size: 54px;
+  }
+
+  .hero-mini-stats {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    min-height: 620px;
+    text-align: center;
+  }
+
+  .about-hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 17px;
+  }
+
+  .about-content h2,
+  .mission-content h2,
+  .section-heading h2 {
+    font-size: 34px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-mini-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .stats-grid,
+  .team-grid,
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section,
+  .mission,
+  .team-section,
+  .why-section {
+    padding: 80px 0;
+  }
+
+  .about-cta {
+    padding: 80px 20px;
+  }
+
+  .about-cta h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero h1 {
+    font-size: 34px;
+  }
+
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  .primary-btn,
+  .secondary-btn,
+  .cta-btn {
+    width: 100%;
+  }
+
+  .stat-card h2 {
+    font-size: 40px;
+  }
+
+  .team-card img {
+    height: 280px;
+  }
+}
