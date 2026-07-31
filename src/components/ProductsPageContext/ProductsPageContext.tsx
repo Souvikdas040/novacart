@@ -84,8 +84,6 @@ export default function ProductsPage() {
 
   return (
     <>
-      <Navbar />
-
       <section className="products-hero">
         <div className="container">
           <h1>Our Products</h1>
@@ -112,8 +110,6 @@ export default function ProductsPage() {
           onPageChange={setCurrentPage}
         />
       )}
-
-      <Footer />
     </>
   );
 }
