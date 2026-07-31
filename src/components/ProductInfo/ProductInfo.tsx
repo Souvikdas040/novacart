@@ -11,7 +11,6 @@ import {
   FaPlus,
 } from "react-icons/fa";
 import { RiShoppingCart2Fill } from "react-icons/ri";
-import { Product } from "@/data/products";
 import "./productInfo.css";
 import { useWishlist } from "@/context/WishlistContext";
 import { Product } from "@/data/products";

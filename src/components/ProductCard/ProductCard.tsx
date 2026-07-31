@@ -2,24 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-
+import { Product } from "@/data/products";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
-
 import { useCart } from "@/context/CartContext";
 import { useWishlist } from "@/context/WishlistContext";
-
 import "./productCard.css";
-
 interface ProductProps {
-  product: {
-    id: number;
-    name: string;
-    category: string;
-    images: string[];
-    price: number;
-    rating: number;
-    reviews?: number;
-  };
+  product: Product;
 }
 
 export default function ProductCard({ product }: ProductProps) {
