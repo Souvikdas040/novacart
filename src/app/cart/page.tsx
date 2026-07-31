@@ -47,7 +47,7 @@ export default function CartPage() {
         </div>
       </section>
 
-      <RelatedProducts currentId={products.id} />
+      <RelatedProducts currentId={0} />
 
       <Footer />
     </>
