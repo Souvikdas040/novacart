@@ -84,13 +84,6 @@ export default function ProductsPage() {
 
   return (
     <>
-      <section className="products-hero">
-        <div className="container">
-          <h1>Our Products</h1>
-          <p>Discover premium electronics, accessories and smart devices.</p>
-        </div>
-      </section>
-
       <ProductFilter
         totalProducts={filteredProducts.length}
         search={search}
