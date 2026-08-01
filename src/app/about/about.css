@@ -95,6 +95,7 @@
 
 .primary-btn,
 .secondary-btn,
+.secondary-btn1,
 .cta-btn {
   display: inline-flex;
   align-items: center;
@@ -105,14 +106,16 @@
   font-weight: 600;
 }
 
-.primary-btn {
+.primary-btn,
+.secondary-btn1 {
   background: #2563eb;
   color: white;
   padding: 15px 34px;
   border-radius: 12px;
 }
 
-.primary-btn:hover {
+.primary-btn:hover,
+.secondary-btn1:hover {
   background: #1d4ed8;
   transform: translateY(-3px);
 }

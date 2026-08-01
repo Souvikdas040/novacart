@@ -337,7 +337,7 @@ export default function AboutPage() {
               your doorstep.
             </p>
 
-            <Link href="/contact" className="secondary-btn">
+            <Link href="/contact" className="secondary-btn1">
               Meet Our Experts
             </Link>
           </div>
