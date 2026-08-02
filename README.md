@@ -234,15 +234,9 @@ npm start
 
 # 🌐 Live Demo
 
-**Render**
-
-https://your-render-link.onrender.com
-
-or
-
 **Vercel**
 
-https://your-vercel-link.vercel.app
+[https://your-vercel-link.vercel.app](https://novacart-pied.vercel.app/)
 
 ---
 
