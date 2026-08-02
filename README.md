@@ -236,7 +236,7 @@ npm start
 
 **Vercel**
 
-[https://your-vercel-link.vercel.app](https://novacart-pied.vercel.app/)
+[https://novacart-pied.vercel.app/](https://novacart-pied.vercel.app/)
 
 ---
 
